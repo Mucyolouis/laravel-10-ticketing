@@ -52,6 +52,13 @@
             </div>
         @endif
 
+        <!-- avatar -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-label for="avatar" value="{{ __('avatar') }}" />
+            <x-input id="avatar" type="file" class="mt-1 block w-full" wire:model="state.avatar" required autocomplete="avatar" />
+            <x-input-error for="avatar" class="mt-2" />
+        </div>
+
         <!-- Name -->
         <div class="col-span-6 sm:col-span-4">
             <x-label for="name" value="{{ __('Name') }}" />
